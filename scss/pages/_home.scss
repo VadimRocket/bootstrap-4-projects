@@ -1,0 +1,114 @@
+.hero {
+  background-image: url(../../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  height: 100vh;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.about {background: $black;}
+.about-title{
+  background: url(../../img/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 45vw;
+}
+
+.about-text {
+padding-top: 6vh;
+padding-bottom: 6vh;
+  @include media-breakpoint-up(md){
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+  }
+}
+.band-members {
+  position: relative;
+}
+.band-member {
+  margin-bottom: 1.5em;
+  box-shadow: 6px 6px 15px 0 rgba(0,0,0,.5);
+  background: $black;
+  @include media-breakpoint-up(md){
+    position: absolute;
+    top: -2.3em;
+    z-index: 10;
+  }
+}
+.band-member-name {
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: .25em;
+}
+.band-member-position {
+  color: $gray-light;
+}
+
+.music {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.music-container {
+  background: $black;
+    box-shadow: 6px 6px 15px 0 rgba(0,0,0,.5);
+    padding-top: 4em;
+    padding-bottom: 4.3em;
+}
+.music-title {
+  margin-bottom: 0.5em;
+}
+.music-callto-action{
+  margin-top: 2em;
+}
+
+.shows {
+  margin-top: 2em;
+}
+
+.show-title {
+  font-family: $sans;
+}
+
+.show-info > * {
+  margin-bottom: 0;
+}
+.show-info {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+
+  // .btn {
+  //   margin-top: auto;
+  // }
+}
+.date {
+  font-weight: $bold;
+  margin-top: 1.25em;
+  &::before{
+    content: '\f133';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin-right: .5em;
+    font-size: 1.1em;
+  }
+
+}
+
+.price {
+  font-weight: $bold;
+
+  small {
+    font-weight: $normal;
+  }
+  &::before {
+    content: '\f145';
+    display: inline-block;
+    font-family: FontAwesome;
+    margin-right: .5em;
+    font-size: 1.1em;
+  }
+}
