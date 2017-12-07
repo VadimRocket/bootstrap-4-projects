@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="css/vendor/main.css">
   </head>
-  <body>
+  <body id="home">
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-faded">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
       <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item ">
-            <a class=" active nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="active nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -99,33 +99,33 @@
     <section class="music" id="ourmusic">
       <div class="container text-center music-container">
         <h2 class=" display-2 music-title">Our music</h2>
-        <div class="row justify-content-center no-gutters">
+          <div class="row justify-content-center no-gutters">
+                <div class="col-md-3 col">
+                    <img src="img/album-01.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col">
+                    <img src="img/album-02.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-3 col">
+                    <img src="img/album-03.jpg" alt="" class="img-fluid">
+                </div>
+          </div><!--.row-->
+          <div class="row justify-content-center no-gutters">
               <div class="col-md-3 col">
-                  <img src="img/album-01.jpg" alt="" class="img-fluid">
+                    <img src="img/album-04.jpg" alt="" class="img-fluid">
               </div>
               <div class="col-md-3 col">
-                  <img src="img/album-02.jpg" alt="" class="img-fluid">
+                    <img src="img/album-05.jpg" alt="" class="img-fluid">
               </div>
               <div class="col-md-3 col">
-                  <img src="img/album-03.jpg" alt="" class="img-fluid">
+                    <img src="img/album-06.jpg" alt="" class="img-fluid">
               </div>
-        </div><!--.row-->
-        <div class="row justify-content-center no-gutters">
-            <div class="col-md-3 col">
-                  <img src="img/album-04.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 col">
-                  <img src="img/album-05.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="col-md-3 col">
-                  <img src="img/album-06.jpg" alt="" class="img-fluid">
-            </div>
-        </div> <!--.row-->
+          </div> <!--.row-->
             <p class="music-callto-action">See something you like?</p>
               <a href="#" class="btn btn-primary">Visit the store</a>
         </div>
     </section>
-    <section class="upcoming-shows" id="shows">
+    <section id="shows" class="upcoming-shows">
       <div class="container">
         <h2 class="display-2 text-center">Upcoming shows</h2>
         <div class="row shows no-gutters">
@@ -199,7 +199,10 @@
 </footer>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery.slim.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/common.js"></script>
   </body>
 </html>
