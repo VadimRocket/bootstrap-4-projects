@@ -1,0 +1,6 @@
+.band-member{
+  &:hover{
+    box-shadow: none;
+    transition: all .3s ease;
+  }
+}

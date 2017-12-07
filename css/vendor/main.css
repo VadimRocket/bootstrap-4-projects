@@ -5045,6 +5045,13 @@ h1 {
 .upcoming-shows {
   min-height: 400px; }
 
+.band-member:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease; }
+
 .parallax {
   display: none; }
   @media (min-width: 768px) {
