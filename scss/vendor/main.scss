@@ -1,4 +1,8 @@
 @import '../abstracts/variables';
+@import '../mixins/fontface';
+@include font-face('Metal Mania', 'MetalMania-Regular', 'Metal_Mania', 'serif');
+@include font-face('Nunito Sans', 'nunito-sans-latin-regular', 'Nunito_Sans', 'serif');
+
 
 @import '../vendor/bootstrap';
 
@@ -10,6 +14,3 @@
 @import '../components/footer';
 
 @import '../pages/home';
-
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400');
-@import url('https://fonts.googleapis.com/css?family=Metal+Mania');

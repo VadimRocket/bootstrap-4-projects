@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Metal Mania";
+  src: url("../../fonts/Metal_Mania/MetalMania-Regular.eot");
+  src: url("../../fonts/Metal_Mania/MetalMania-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Metal_Mania/MetalMania-Regular.woff") format("woff"), url("../../fonts/Metal_Mania/MetalMania-Regular.ttf") format("truetype"), url("../../fonts/Metal_Mania/MetalMania-Regular.svg#Metal Mania") format("svg"); }
+
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../../fonts/Nunito_Sans/nunito-sans-latin-regular.eot");
+  src: url("../../fonts/Nunito_Sans/nunito-sans-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Nunito_Sans/nunito-sans-latin-regular.woff") format("woff"), url("../../fonts/Nunito_Sans/nunito-sans-latin-regular.ttf") format("truetype"), url("../../fonts/Nunito_Sans/nunito-sans-latin-regular.svg#Nunito Sans") format("svg"); }
+
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -11,8 +21,6 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400");
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 html {
   font-family: sans-serif;
   line-height: 1.15;
