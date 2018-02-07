@@ -19,8 +19,8 @@ Singleton.prototype.changeheightNavbar = function(){
 
 	$(window).scroll(function(){
 			var styleNavMemuMin = {
-	      padding: "0px 1rem",
-	    };
+		      padding: "0px 1rem",
+		    };
 			var styleNavMenuNorm = {
 		      padding: "0.5rem 1rem",
 		    };
@@ -62,12 +62,12 @@ Singleton.prototype.changeNavClass = function(){
 			$('#navbarNav a').each(function () {
 					var currLink = $(this);
 					var refElement = $(currLink.attr("href"));
-					if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-							$('#navbarNav ul li a').removeClass("active");
-							currLink.addClass("active");
+					if (refElement.position().top <= scrollPos + 150 && refElement.position().top + refElement.height() > scrollPos ) {
+						$('#navbarNav ul li a').removeClass("active");
+						currLink.addClass("active");
 					}
 					else{
-							currLink.removeClass("active");
+						currLink.removeClass("active");
 					}
 			});
 	}
